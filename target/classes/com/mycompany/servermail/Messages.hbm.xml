@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 28.Eki.2015 12:57:22 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.servermail.Messages" table="messages" catalog="mailserver" optimistic-lock="version">
+        <id name="idMessage" type="java.lang.Integer">
+            <column name="idMessage" />
+            <generator class="identity" />
+        </id>
+        <property name="sending" type="java.lang.Integer">
+            <column name="sending" />
+        </property>
+        <property name="message" type="string">
+            <column name="message" length="450" />
+        </property>
+    </class>
+</hibernate-mapping>

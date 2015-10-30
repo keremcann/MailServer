@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 28.Eki.2015 12:57:22 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.servermail.Server" table="server" catalog="mailserver" optimistic-lock="version">
+        <id name="idServer" type="java.lang.Integer">
+            <column name="idServer" />
+            <generator class="identity" />
+        </id>
+        <property name="from" type="string">
+            <column name="from" length="45" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="45" />
+        </property>
+        <property name="to" type="string">
+            <column name="to" length="45" />
+        </property>
+        <property name="content" type="string">
+            <column name="content" length="45" />
+        </property>
+        <property name="port" type="string">
+            <column name="port" length="45" />
+        </property>
+        <property name="server" type="string">
+            <column name="server" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
