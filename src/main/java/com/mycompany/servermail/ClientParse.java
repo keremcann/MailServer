@@ -17,7 +17,7 @@ public class ClientParse {
     public void ClientObject(){
         JSONObject obj = new JSONObject();
         obj.put("from", "ce.cankerem@gmail.com");
-        obj.put("password", "Sifre.7221");
+        obj.put("password", "mail-password");
         obj.put("to", "ce.cankerem@yandex.com");
         obj.put("content", "Napisen Bremini elemyon");
         obj.put("port", "587");
